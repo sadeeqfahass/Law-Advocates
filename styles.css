@@ -205,8 +205,18 @@ nav a:focus {
     background: #2d4570;
     padding: 1em 1.5em;
     border-bottom: 5px solid #ab7f60;
+}
+.pa-card h4{
+    text-align: center;
+}
+.pa-card .card-body{
+    text-align: center;
+    margin: .7rem;
+}
+.pa-card .semi-pa-card{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .feedback {
@@ -280,6 +290,9 @@ footer .flex {
 
 @media (max-width:675px) {
 
+    .feedback {
+        padding: 4em 1em;
+    }
     footer {
         text-align: center;
     }
@@ -311,8 +324,18 @@ footer .logo span {
     color: #ab7f60;
 }
 
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .contact-us i {
     color: #ab7f60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .location {
