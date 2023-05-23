@@ -9,7 +9,7 @@ body {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .btn {
