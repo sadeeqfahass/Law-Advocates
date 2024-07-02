@@ -2,22 +2,34 @@ let menuIcon = document.getElementById("menu-icon");
 let menu = document.getElementById("menu");
 let closeNav = document.getElementById("close-nav");
 
-
 menuIcon.addEventListener("click", () => {
   menu.classList.add("nav-show");
-  menuIcon.style.display="none"
+  menuIcon.style.display = "none";
 });
 
-document.addEventListener("scroll", () => {
-  menu.classList.remove("nav-show");
-  menuIcon.style.display="block"
-});
+if (window.screen.width <= 1000) {
+  document.addEventListener("scroll", () => {
+    menu.classList.remove("nav-show");
+    menuIcon.style.display = "block";
+  });
+}
 
 closeNav.addEventListener("click", () => {
-    menu.classList.remove("nav-show");
-    menuIcon.style.display="block"
-  });
+  menu.classList.remove("nav-show");
+  menuIcon.style.display = "block";
+});
 
+// Read more popup
+
+document.getElementById("read-more").addEventListener("click", function () {
+  document.getElementById("readMorePopup").style.display = "flex";
+});
+
+document.getElementById("close-readMore").addEventListener("click", function () {
+  document.getElementById("readMorePopup").style.display = "none";
+});
+
+// Send a message pop Up
 document.getElementById("openPopupBtn").addEventListener("click", function () {
   document.getElementById("popupForm").style.display = "flex";
 });
