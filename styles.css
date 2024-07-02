@@ -205,7 +205,7 @@ body {
 }
 
 .top .left p {
-    color: #fff;
+    color: #fff !important;
 }
 
 header {
