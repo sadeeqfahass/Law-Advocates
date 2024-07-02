@@ -17,6 +17,124 @@ body {
   overflow-x: hidden;
 }
 
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.popup-content {
+    background-color: #000;
+    padding: 30px;
+    padding-left: 10px;
+    border-radius: 5px;
+    width: 400px;
+    height: 500px;
+    overflow: auto;
+    position: relative;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.popup form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #49abe9;
+}
+
+.popup form input, .popup form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.popup form textarea {
+    resize: none;
+}
+
+.popup form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: solid 2px #49abe9;
+    color: #fff;
+}
+
+.popup form button:hover {
+    background: #fff;
+}
+
+.nav-side {
+    height: 100%;
+    width: 80%;
+    background: #04153c;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 200;
+    transition: all .5s;
+    position: absolute;
+    top: 0;
+    transform: translateX(-100%);
+    display: block;
+}
+
+.nav-show {
+    transform: translateX(0);
+
+}
+
+.nav-side  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-side .items p {
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: -55px;
+    right: 10px;
+    
+}
+
+.nav-side .items ul {
+    padding: 0;
+    text-align: center;
+}
+
+.nav-side .items ul li{
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+.nav-side .items ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.nav-side .items ul li a:hover {
+    color: #9c9c9c;
+}
+
 .btn,
 .pa-btn button {
   background: #0f0f0f;
@@ -26,7 +144,7 @@ body {
 }
 
 .btn:hover {
-  background: #fff;
+  background: transparent;
   color: #04153c;
 }
 
@@ -38,13 +156,17 @@ body {
   padding: 0 3.5em;
 }
 
-.top .right .btn a {
-    text-decoration: none;
-    color: #fff;
+.top .right .btn:hover {
+  border: solid 2px #fff;
 }
 
-.top .right .btn:hover a{
-    color: #000;
+.top .right .btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.top .right .btn:hover a {
+  color: #fff;
 }
 
 header {
@@ -97,7 +219,7 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-  color: #04153c;
+  color: #49abe9;
 }
 
 .fa-bars {
@@ -120,6 +242,7 @@ nav a:focus {
   font-size: 1.2rem;
   padding: 0.6em 1em;
   margin-top: 1em;
+  border: 2px solid #04153c;
 }
 
 .btn-clear {
@@ -163,11 +286,16 @@ nav a:focus {
 .about {
   margin: 0 auto;
   color: #000;
-  width: 80%;
+  width: 85%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 6em 1em;
+  padding: 6rem 0.5rem;
+}
+
+.about-heading {
+  text-align: center;
 }
 
 .about .left {
@@ -178,14 +306,18 @@ nav a:focus {
   width: 50%;
 }
 
+.about .right .btn {
+  border: #04153c solid 2px;
+}
+
 .image-holder {
   width: 50%;
 }
 
 .image-holder img {
   width: 100%;
-  border-right: #49abe9 20px solid;
-  border-bottom: #49abe9 20px solid;
+  border-right: #49abe9 10px solid;
+  border-bottom: #49abe9 10px solid;
 }
 
 .practice-area {
@@ -252,12 +384,12 @@ nav a:focus {
 }
 
 .page-2 .pa-card {
-    height: 360px;
-    padding: 1em .5rem;
+  height: 360px;
+  padding: 1em 0.5rem;
 }
 
 .pa-card .card-icon i {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .pa-card h4 {
@@ -283,7 +415,13 @@ nav a:focus {
   margin-top: -6px;
 }
 
+.feedback .small-heading {
+  line-height: 1.5;
+  padding: 0 5rem;
+}
+
 .fb-cards {
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   gap: 40px;
@@ -297,20 +435,71 @@ nav a:focus {
   text-align: center;
 }
 
-.exMark {
+.fb-card .card-icon .icon {
   color: #49abe9;
   font-size: 1.5rem;
-  scale: 2;
-  margin: 0;
+  scale: 1.5;
+  margin-bottom: 2.5rem ;
+}
+
+.fb-card-title {
+  margin-top: -15px;
 }
 
 .fb-card-text {
-  margin-top: -20px;
+  text-align: left;
 }
 
 .client {
   text-align: right;
   color: #707070;
+}
+
+.team {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+.team h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    margin: 10px 0 5px;
+}
+
+.team-member p {
+    font-size: 1em;
+    color: #666;
 }
 
 footer {
@@ -519,6 +708,10 @@ footer .logo span {
   /* .feedback {
         padding: 0;
     } */
+
+  .feedback-text .small-heading {
+    padding: 0 1rem;
+  }
 
   .fb-cards {
     flex-direction: column;
