@@ -14,6 +14,7 @@ body {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   color: #fff;
+  background: #ebebeb;
   overflow-x: hidden;
 }
 
@@ -178,9 +179,14 @@ body {
   padding: 0.5em 1em;
 }
 
+
+
+.about .about-btn:hover{
+  color: #000;
+}
+
 .btn:hover {
   background: transparent;
-  color: #04153c;
 }
 
 .top {
@@ -209,13 +215,13 @@ body {
 }
 
 header {
-  background-image: url(Images/background2.jpg);
+  background-image: linear-gradient(to top, rgba(2, 10, 27, 0.966) , rgba(6, 34, 99, 0.553)), url(Images/background2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: center center;
   padding-bottom: 8em;
-  /* width: 100%; */
 }
+
 
 nav {
   display: flex;
@@ -285,18 +291,19 @@ nav a:focus {
   border: solid 1px #000;
   margin-left: 1.5em;
 }
+
 .cards {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
   padding: 0 5em;
-  margin-top: -7em;
+  margin-bottom: -15rem;
 }
 
 .card {
   background: #04153c;
   width: 30%;
-  padding: 0.5em;
+  padding: 0.5rem;
   border-bottom: 5px solid #49abe9;
   gap: 0.5em;
   display: flex;
@@ -326,7 +333,7 @@ nav a:focus {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 6rem 0.5rem;
+  padding: 10rem 0.5rem 6rem;
 }
 
 .about-heading {
@@ -437,7 +444,7 @@ nav a:focus {
 }
 
 .feedback {
-  background: #ebebeb;
+  background: #fff;
   color: #000;
   padding: 4em;
 }
@@ -465,6 +472,7 @@ nav a:focus {
 .fb-card {
   width: 20%;
   background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   padding: 2rem 1rem;
   border-bottom: 5px solid #49abe9;
   text-align: center;
@@ -485,15 +493,10 @@ nav a:focus {
   text-align: left;
 }
 
-.client {
-  text-align: right;
-  color: #707070;
-}
-
 .team {
     text-align: center;
     padding: 50px 20px;
-    background-color: #f9f9f9;
+    background-color: #ebebeb;
     color: #000;
 }
 
@@ -538,7 +541,7 @@ nav a:focus {
 }
 
 footer {
-  background-image: url(Images/background2.jpg);
+  background-image: linear-gradient(to top, rgba(2, 10, 27, 0.966) , rgba(6, 34, 99, 0.553)), url(Images/background2.jpg);
   background-size: cover;
   background-position: 100% 100%;
   padding: 2rem 3rem;
@@ -570,6 +573,7 @@ footer .flex {
   .feedback {
     padding: 4em 1em;
   }
+
   footer {
     text-align: center;
   }

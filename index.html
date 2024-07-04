@@ -19,71 +19,80 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-
     <div id="popupForm" class="popup">
-        <div class="popup-content">
-            <span class="closeBtn">&times;</span>
-            <h2>Send a Message</h2>
-            <form id="emailForm">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+      <div class="popup-content">
+        <span class="closeBtn">&times;</span>
+        <h2>Send a Message</h2>
+        <form id="emailForm">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
 
-                <label for="fullname">Fullname:</label>
-                <input type="text" id="fullname" name="fullname" required>
+          <label for="fullname">Fullname:</label>
+          <input type="text" id="fullname" name="fullname" required />
 
-                <label for="mobile">Mobile No:</label>
-                <input type="tel" id="mobile" name="mobile" required>
+          <label for="mobile">Mobile No:</label>
+          <input type="tel" id="mobile" name="mobile" required />
 
-                <label for="country">Country:</label>
-                <input type="text" id="country" name="country" required>
+          <label for="country">Country:</label>
+          <input type="text" id="country" name="country" required />
 
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required />
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
 
-                <button class="btn" type="button" id="sendBtn">Send</button>
-            </form>
-        </div>
+          <button class="btn" type="button" id="sendBtn">Send</button>
+        </form>
+      </div>
     </div>
 
     <div id="readMorePopup" class="readMore-popup">
-        <div class="content">
-            <span class="closeBtn" id="close-readMore">&times;</span>
-            <p>
-                .... Approach to guiding students through the university admissions process. We have established strategic partnerships with reputable agencies and companies, further enhancing our ability to provide comprehensive support to our clients.
-            </p>
-            <p>
-                Currently headquartered in Kaduna State, Millennium City, our office at No. FF 06 serves as a central hub for our operations. Despite being a relatively young company, we have rapidly expanded our presence in the market and continue to grow our team of dedicated professionals.
-            </p>
-            <p>
-                As a dynamic and forward-thinking organization, Ummah Educational Services remains steadfast in our mission to make a positive impact in the field of education, empowering individuals to unlock their full potential and shape brighter futures for themselves and their communities.
-            </p>
-        </div>
+      <div class="content">
+        <span class="closeBtn" id="close-readMore">&times;</span>
+        <p>
+          .... Approach to guiding students through the university admissions
+          process. We have established strategic partnerships with reputable
+          agencies and companies, further enhancing our ability to provide
+          comprehensive support to our clients.
+        </p>
+        <p>
+          Currently headquartered in Kaduna State, Millennium City, our office
+          at No. FF 06 serves as a central hub for our operations. Despite being
+          a relatively young company, we have rapidly expanded our presence in
+          the market and continue to grow our team of dedicated professionals.
+        </p>
+        <p>
+          As a dynamic and forward-thinking organization, Ummah Educational
+          Services remains steadfast in our mission to make a positive impact in
+          the field of education, empowering individuals to unlock their full
+          potential and shape brighter futures for themselves and their
+          communities.
+        </p>
+      </div>
     </div>
 
     <div class="nav-side" id="menu">
-        <div class="items">
-            <p id="close-nav">&times;</p>
-          <ul>
-            <li><a href="#">Home</a></li>
+      <div class="items">
+        <p id="close-nav">&times;</p>
+        <ul>
+          <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#practice-area">Values</a></li>
           <li><a href="#feedback">Services</a></li>
-          </ul>
-        </div>
+        </ul>
       </div>
+    </div>
 
     <div class="top">
       <div class="left">
         <p>
           Call us now &nbsp; <i class="fa-solid fa-phone"></i> &nbsp;
-            <span>+2347086461342</span> 
+          <span>+2347086461342</span>
         </p>
       </div>
       <div class="right">
-        <button class="top-btn btn"><a href="#footer">Contact Us</a></button>
+        <button class="top-btn btn" id="openPopupTop"><a href="#">Send us a Message</a></button>
       </div>
     </div>
 
@@ -103,7 +112,7 @@
           <li><a href="#feedback">Services</a></li>
         </ul>
 
-        <i id="menu-icon"  class="fa-solid fa-bars"></i>
+        <i id="menu-icon" class="fa-solid fa-bars"></i>
       </nav>
       <hr />
       <div class="hero">
@@ -120,52 +129,58 @@
           </p>
         </div>
 
-        <button class="hero-btn btn" id="openPopupBtn">Send us a Message</button>
+        <button class="hero-btn btn" id="openPopupBtn">
+          Send us a Message
+        </button>
       </div>
+      <section class="cards">
+        <div class="card">
+          <div class="card-text">
+            <h4 class="card-title">Mission</h4>
+            <p class="card-body">
+              Our vision is to become the leading provider of educational services
+              in Nigeria and beyond, recognized for our unwavering commitment to
+              excellence, integrity, and client satisfaction.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-text">
+            <h4 class="card-title">Vision</h4>
+            <p class="card-body">
+              Our mission is to empower individuals with the knowledge, resources,
+              and support needed to achieve their academic aspirations and unlock
+              their full potential.
+            </p>
+          </div>
+        </div>
+      </section>
     </header>
 
-    <section class="cards">
-      <div class="card">
-        <div class="card-text">
-          <h4 class="card-title">Mission</h4>
-          <p class="card-body">
-            Our vision is to become the leading provider of educational services
-            in Nigeria and beyond, recognized for our unwavering commitment to
-            excellence, integrity, and client satisfaction.
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-text">
-          <h4 class="card-title">Vision</h4>
-          <p class="card-body">
-            Our mission is to empower individuals with the knowledge, resources,
-            and support needed to achieve their academic aspirations and unlock
-            their full potential.
-          </p>
-        </div>
-      </div>
-    </section>
 
     <section class="about" id="about">
-     
-        <div class="left">
-            <div class="image-holder">
-                    <img src="Images/Dr-nuru.png" alt="">
-                </div>
-
-          </div>
-          <div class="right">
-            <p class="small-heading">____ About Us ____</p>
+      <div class="left">
+        <div class="image-holder">
+          <img src="Images/Dr-nuru.png" alt="" />
+        </div>
+      </div>
+      <div class="right">
+        <p class="small-heading">____ About Us ____</p>
         <h2 class="about-title">Welcome to Ummah Educational Service</h2>
-            <p class="about-body">
-                Umah Educational Services was founded by Dr. Nurudeen Adam Jallo with a vision to facilitate educational opportunities and empower students to pursue their academic goals. Since our inception, we have been dedicated to assisting students in finding admissions into prestigious universities worldwide.
-            </p>
-            <p class="about-body">
-                Over the years, Umah Educational Services has garnered significant recognition for our commitment to excellence and our personalized.........
-            </p>
-            <button class="btn" id="read-more">Read More</button>
-            </div>
+        <p class="about-body">
+          Umah Educational Services was founded by Dr. Nurudeen Adam Jallo with
+          a vision to facilitate educational opportunities and empower students
+          to pursue their academic goals. Since our inception, we have been
+          dedicated to assisting students in finding admissions into prestigious
+          universities worldwide.
+        </p>
+        <p class="about-body">
+          Over the years, Umah Educational Services has garnered significant
+          recognition for our commitment to excellence and our
+          personalized.........
+        </p>
+        <button class="about-btn btn" id="read-more">Read More</button>
+      </div>
     </section>
 
     <section class="practice-area" id="practice-area">
@@ -245,11 +260,13 @@
 
     <section class="feedback" id="feedback">
       <div class="feedback-text">
-          <h2 class="heading">
-            ___ Services ___
-        </h2>
+        <h2 class="heading">___ Services ___</h2>
         <p class="small-heading">
-            At Ummah Educational Services, we are dedicated to providing an unparalleled service experience to our clients. Our comprehensive range of services is designed to guide students and individuals through every step of the university admissions process, ensuring a seamless transition into esteemed institutions worldwide.
+          At Ummah Educational Services, we are dedicated to providing an
+          unparalleled service experience to our clients. Our comprehensive
+          range of services is designed to guide students and individuals
+          through every step of the university admissions process, ensuring a
+          seamless transition into esteemed institutions worldwide.
         </p>
       </div>
       <div class="fb-cards">
@@ -260,124 +277,140 @@
           <h3 class="fb-card-title">Personalized Admission Assistance</h3>
           <div class="fb-card-text">
             <p>
-                Customized university recommendations based on academic interests, preferences, and goals. Detailed guidance on application procedures, including documentation requirements and deadlines. Assistance with personal statement writing, interview preparation, and other admission-related tasks
+              Customized university recommendations based on academic interests,
+              preferences, and goals. Detailed guidance on application
+              procedures, including documentation requirements and deadlines.
+              Assistance with personal statement writing, interview preparation,
+              and other admission-related tasks
             </p>
           </div>
         </div>
 
         <div class="fb-card">
-            <div class="card-icon">
-                <i class="icon fa-solid fa-circle-question"></i>
-            </div>
-            <h3 class="fb-card-title">Expert Guidance Across Disciplines</h3>
-            <div class="fb-card-text">
-              <p>
-                Whether students are interested in sciences, social sciences, arts, engineering, computer programs, medicine, or other fields, we provide specialized guidance and support to help them pursue their chosen academic paths.
-              </p>
-            </div>
+          <div class="card-icon">
+            <i class="icon fa-solid fa-circle-question"></i>
           </div>
+          <h3 class="fb-card-title">Expert Guidance Across Disciplines</h3>
+          <div class="fb-card-text">
+            <p>
+              Whether students are interested in sciences, social sciences,
+              arts, engineering, computer programs, medicine, or other fields,
+              we provide specialized guidance and support to help them pursue
+              their chosen academic paths.
+            </p>
+          </div>
+        </div>
 
-          <div class="fb-card">
-            <div class="card-icon">
-                <i class="icon fa-solid fa-arrow-right"></i>
-            </div>
-            <h3 class="fb-card-title">Seamless Transitions</h3>
-            <div class="fb-card-text">
-              <p>
-                We facilitate seamless transitions for students from the application stage to enrollment, ensuring a smooth and hassle-free experience throughout the process.
-              </p>
-            </div>
+        <div class="fb-card">
+          <div class="card-icon">
+            <i class="icon fa-solid fa-arrow-right"></i>
           </div>
+          <h3 class="fb-card-title">Seamless Transitions</h3>
+          <div class="fb-card-text">
+            <p>
+              We facilitate seamless transitions for students from the
+              application stage to enrollment, ensuring a smooth and hassle-free
+              experience throughout the process.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="practice-area">
-        <div class="practice-area-text">
-          <p class="small-heading">________</p>
-          <h2 class="practice-title">What we believe in</h2>
-        </div>
-        <div class="pa-cards">
-          <div class="first-row">
-            <div class="pa-card">
-              <div class="card-icon">
-                <i class="icon fa-solid fa-handshake"></i>
-              </div>
-              <h4 class="card-title">Accountability</h4>
-              <div class="card-text">
-                <p class="card-body">
-                    We take ownership of our actions and decisions, holding ourselves accountable for the outcomes. We fulfill our commitments and responsibilities with diligence and professionalism, ensuring that we deliver on our promises to our clients and stakeholders.
-                </p>
-              </div>
+      <div class="practice-area-text">
+        <p class="small-heading">________</p>
+        <h2 class="practice-title">What we believe in</h2>
+      </div>
+      <div class="pa-cards">
+        <div class="first-row">
+          <div class="pa-card">
+            <div class="card-icon">
+              <i class="icon fa-solid fa-handshake"></i>
             </div>
-  
-            <div class="pa-card">
-              <div class="card-icon">
-                <i class="icon fa-solid fa-star"></i>
-              </div>
-              <h4 class="card-title">Customer Value</h4>
-              <div class="card-text">
-                <p class="card-body">
-                    We place the utmost importance on customer satisfaction, viewing our clients as partners whose success is paramount. We listen attentively to their needs, preferences, and feedback and strive to exceed their expectations in every interaction.
-                </p>
-              </div>
+            <h4 class="card-title">Accountability</h4>
+            <div class="card-text">
+              <p class="card-body">
+                We take ownership of our actions and decisions, holding
+                ourselves accountable for the outcomes. We fulfill our
+                commitments and responsibilities with diligence and
+                professionalism, ensuring that we deliver on our promises to our
+                clients and stakeholders.
+              </p>
             </div>
-
-            <div class="pa-card">
-                <div class="card-icon">
-                  <i class="fa-solid fa-lightbulb icon"></i>
-                </div>
-                <h4 class="card-title">Innovation</h4>
-                <div class="card-text">
-                  <p class="card-body">
-                    We embrace innovation and creativity as drivers of growth and success. We are open to new ideas, technologies, and approaches that can enhance our services and create value for our clients.
-                  </p>
-                </div>
-              </div>
           </div>
-  
+
+          <div class="pa-card">
+            <div class="card-icon">
+              <i class="icon fa-solid fa-star"></i>
+            </div>
+            <h4 class="card-title">Customer Value</h4>
+            <div class="card-text">
+              <p class="card-body">
+                We place the utmost importance on customer satisfaction, viewing
+                our clients as partners whose success is paramount. We listen
+                attentively to their needs, preferences, and feedback and strive
+                to exceed their expectations in every interaction.
+              </p>
+            </div>
+          </div>
+
+          <div class="pa-card">
+            <div class="card-icon">
+              <i class="fa-solid fa-lightbulb icon"></i>
+            </div>
+            <h4 class="card-title">Innovation</h4>
+            <div class="card-text">
+              <p class="card-body">
+                We embrace innovation and creativity as drivers of growth and
+                success. We are open to new ideas, technologies, and approaches
+                that can enhance our services and create value for our clients.
+              </p>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="team" id="team">
-        <h2>Our Team</h2>
-        <div class="team-container">
-            <div class="team-member">
-                <img src="Images/Dr-nuruu.png" alt="Member 1">
-                <h5>Dr. Nurudeen Adam Jallo</h5>
-                <p>CEO</p>
-            </div>
-
-            <div class="team-member">
-                <img src="Images/abdul.png" alt="Member 2">
-                <h5>Engr. Abdulaziz Ibrahim Sani</h5>
-                <p>COO</p>
-            </div>
-
-            <div class="team-member">
-                <img src="Images/engr-hateem.png" alt="Member 2">
-                <h5>Engr. Hateemi Arabi Abdulfathi</h5>
-                <p>CFO</p>
-            </div>
-
-            <div class="team-member">
-                <img src="Images/imam-umar.png" alt="Member 3">
-                <h5>Imam Umur Abba</h5>
-                <p>Coordinator</p>
-            </div>
-
-            <div class="team-member">
-                <img src="Images/mu-utasim.png" alt="Member 3">
-                <h5>Mu'tasim Muhammad bin Uthman</h5>
-                <p>Account Manager</p>
-            </div>
-
-            <div class="team-member">
-                <img src="Images/safa.png" alt="Member 3">
-                <h5>Safa Salauddin</h5>
-                <p>Account Manager</p>
-            </div>
-
+    <section class="team" id="team">
+      <h2>Our Team</h2>
+      <div class="team-container">
+        <div class="team-member">
+          <img src="Images/Dr-nuruu.png" alt="Member 1" />
+          <h5>Dr. Nurudeen Adam Jallo</h5>
+          <p>CEO</p>
         </div>
+
+        <div class="team-member">
+          <img src="Images/abdul.png" alt="Member 2" />
+          <h5>Engr. Abdulaziz Ibrahim Sani</h5>
+          <p>COO</p>
+        </div>
+
+        <div class="team-member">
+          <img src="Images/engr-hateem.png" alt="Member 2" />
+          <h5>Engr. Hateemi Arabi Abdulfathi</h5>
+          <p>CFO</p>
+        </div>
+
+        <div class="team-member">
+          <img src="Images/imam-umar.png" alt="Member 3" />
+          <h5>Imam Umur Abba</h5>
+          <p>Coordinator</p>
+        </div>
+
+        <div class="team-member">
+          <img src="Images/mu-utasim.png" alt="Member 3" />
+          <h5>Mu'tasim Muhammad bin Uthman</h5>
+          <p>Account Manager</p>
+        </div>
+
+        <div class="team-member">
+          <img src="Images/safa.png" alt="Member 3" />
+          <h5>Safa Salauddin</h5>
+          <p>Account Manager</p>
+        </div>
+      </div>
     </section>
 
     <footer id="footer">
@@ -440,7 +473,12 @@
           </div>
         </div>
       </div>
-      <p class="copyright">Copyright &copy;  All rights reserved. Developed by <a href="https://mmt-ng.com/" target="_blank" rel="noopener noreferrer">Mastermind Tech</a> </p>
+      <p class="copyright">
+        Copyright &copy; All rights reserved. Developed by
+        <a href="https://mmt-ng.com/" target="_blank" rel="noopener noreferrer"
+          >Mastermind Tech</a
+        >
+      </p>
     </footer>
     <div class="bottom">&nbsp;</div>
 

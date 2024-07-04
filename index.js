@@ -34,6 +34,10 @@ document.getElementById("openPopupBtn").addEventListener("click", function () {
   document.getElementById("popupForm").style.display = "flex";
 });
 
+document.getElementById("openPopupTop").addEventListener("click", function () {
+    document.getElementById("popupForm").style.display = "flex";
+  });
+
 document.querySelector(".closeBtn").addEventListener("click", function () {
   document.getElementById("popupForm").style.display = "none";
 });
