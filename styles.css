@@ -186,7 +186,8 @@ body {
 }
 
 .btn:hover {
-  background: transparent;
+  background: #fff;
+  color: #000;
 }
 
 .top {
@@ -207,7 +208,7 @@ body {
 }
 
 .top .right .btn:hover a {
-  color: #fff;
+  color: #000;
 }
 
 .top .left p {
@@ -293,19 +294,20 @@ nav a:focus {
 }
 
 .cards {
+  background: transparent;
   display: flex;
   justify-content: center;
   gap: 0.5rem;
   padding: 0 5em;
-  margin-bottom: -15rem;
+  /* margin-bottom: -15rem; */
 }
 
 .card {
   background: #04153c;
   width: 30%;
   padding: 0.5rem;
-  border-bottom: 5px solid #49abe9;
-  gap: 0.5em;
+  border-left: 5px solid #49abe9;
+  gap: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -325,6 +327,32 @@ nav a:focus {
   font-size: 1.5rem;
 }
 
+.catalogue-section {
+  max-width: 100%;
+  /* margin: 150px 0 0; */
+  padding: 5rem;
+  background-color: #283c61;
+}
+
+.catalogue-section h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #49abe9;
+  margin-bottom: 20px;
+}
+
+.catalogue-section ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.catalogue-section ul li {
+  margin-bottom: 10px;
+}
+
 .about {
   margin: 0 auto;
   color: #000;
@@ -333,7 +361,7 @@ nav a:focus {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 10rem 0.5rem 6rem;
+  padding: 3rem 0.5rem 6rem;
 }
 
 .about-heading {
@@ -358,8 +386,13 @@ nav a:focus {
 
 .image-holder img {
   width: 100%;
-  border-right: #49abe9 10px solid;
-  border-bottom: #49abe9 10px solid;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgba(4, 21, 60, 0.3), rgba(40, 60, 97, 1));
+  outline: solid 5px rgba(73, 172, 233, 0.241);
+  outline-offset: .3rem;
+  /* border-right: #49abe9 10px solid;
+  border-bottom: #49abe9 10px solid; */
 }
 
 .practice-area {
@@ -625,7 +658,13 @@ footer .logo h4 {
   margin: 1rem 0 2rem 0;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   column-gap: 10px;
+}
+
+.phone span {
+  display: flex;
+  gap: 2px;
 }
 
 .email {
@@ -726,6 +765,14 @@ footer .copyright a {
 
   .about .right {
     width: 100%;
+  }
+
+  .catalogue-section {
+    padding: 1rem;
+  }
+
+  .catalogue-section h2 {
+    font-size: 1rem;
   }
 
   .practice-area {
