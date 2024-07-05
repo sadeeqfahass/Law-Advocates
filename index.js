@@ -25,9 +25,11 @@ document.getElementById("read-more").addEventListener("click", function () {
   document.getElementById("readMorePopup").style.display = "flex";
 });
 
-document.getElementById("close-readMore").addEventListener("click", function () {
-  document.getElementById("readMorePopup").style.display = "none";
-});
+document
+  .getElementById("close-readMore")
+  .addEventListener("click", function () {
+    document.getElementById("readMorePopup").style.display = "none";
+  });
 
 // Send a message pop Up
 document.getElementById("openPopupBtn").addEventListener("click", function () {
@@ -35,8 +37,12 @@ document.getElementById("openPopupBtn").addEventListener("click", function () {
 });
 
 document.getElementById("openPopupTop").addEventListener("click", function () {
-    document.getElementById("popupForm").style.display = "flex";
-  });
+  document.getElementById("popupForm").style.display = "flex";
+});
+
+document.getElementById("openPopupCat").addEventListener("click", function () {
+  document.getElementById("popupForm").style.display = "flex";
+});
 
 document.querySelector(".closeBtn").addEventListener("click", function () {
   document.getElementById("popupForm").style.display = "none";
@@ -55,6 +61,17 @@ document.getElementById("sendBtn").addEventListener("click", function () {
     `Email: ${email}, Fullname: ${fullname}, Mobile No: ${mobile}, Country: ${country}, Subject: ${subject}, Message: ${message}`
   );
 
-  alert("Message sent!");
-  document.getElementById("popupForm").style.display = "none";
+  if (
+    !email ||
+    !fullname ||
+    !mobile ||
+    !country ||
+    !subject ||
+    !message
+  ) {
+    alert("Please fill in all the fields.");
+  } else {
+    alert("Message sent!");
+    document.getElementById("popupForm").style.display = "none";
+  }
 });
